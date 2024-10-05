@@ -1,6 +1,6 @@
 {
-  "root": "C:\\Códigos\\TecHome\\TecHome",
-  "reactNativePath": "C:\\Códigos\\TecHome\\TecHome\\node_modules\\react-native",
+  "root": "C:\\Codigos\\Casa_TecHome",
+  "reactNativePath": "C:\\Codigos\\Casa_TecHome\\node_modules\\react-native",
   "reactNativeVersion": "0.75",
   "dependencies": {},
   "commands": [
@@ -164,7 +164,7 @@
         {
           "name": "--path <path>",
           "description": "Path to the React Native project root.",
-          "default": "C:\\Códigos\\TecHome\\TecHome"
+          "default": "C:\\Codigos\\Casa_TecHome"
         },
         {
           "name": "--platform <string>",
@@ -451,7 +451,7 @@
   "assets": [],
   "project": {
     "ios": {
-      "sourceDir": "C:\\Códigos\\TecHome\\TecHome\\ios",
+      "sourceDir": "C:\\Codigos\\Casa_TecHome\\ios",
       "xcodeProject": {
         "name": "TecHome.xcodeproj",
         "path": ".",
@@ -460,7 +460,7 @@
       "assets": []
     },
     "android": {
-      "sourceDir": "C:\\Códigos\\TecHome\\TecHome\\android",
+      "sourceDir": "C:\\Codigos\\Casa_TecHome\\android",
       "appName": "app",
       "packageName": "com.techome",
       "applicationId": "com.techome",

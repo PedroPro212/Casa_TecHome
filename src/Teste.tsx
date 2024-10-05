@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, Button, StyleSheet } from 'react-native';
-import HomeCliente from './HomeCliente'; // Importe sua tela HomeCliente
 
-const App = () => {
+const Teste = () => {
 
   return (
     <Text>sss</Text>
@@ -25,4 +24,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default App;
+export default Teste;
