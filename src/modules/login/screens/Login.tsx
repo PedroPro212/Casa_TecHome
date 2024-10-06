@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { SafeAreaView, ScrollView, Text, TextInput, TouchableOpacity, StyleSheet, View, Image } from 'react-native';
-import HomeCliente from '../../../HomeCliente';
+import HomeCliente from '../../home/screens/HomeCliente';
 //import TelaADM from './TelaADM';
 
 const Login = () => {
@@ -8,52 +8,49 @@ const Login = () => {
 
     return (
         <SafeAreaView style={styles.container}>
-            {currentScreen === 'App' ? (
-                <View style={styles.container}>
-                    <View style={styles.circleContainer}>
-                        <View style={styles.circle}>
-                            {/* Aqui pode ir o conteúdo do círculo, se necessário */}
-                        </View>
+            <View style={styles.container}>
+                <View style={styles.circleContainer}>
+                    <View style={styles.circle}>
+                        {/* Aqui pode ir o conteúdo do círculo, se necessário */}
                     </View>
-
-                    <Image
-                        source={ require('../../../imgs/LogoTecHouse.png') }
-                        style={{width: 120, height: 120, top: -100}}
-                    />
-
-                    <Text style={{ fontSize: 30, color: '#000000', marginBottom: 30 }}>TecHome</Text>
-                    <TextInput 
-                        style={styles.input} 
-                        placeholder="Digite seu e-mail:"
-                    />
-                    
-                    <TextInput
-                        style={styles.input}
-                        placeholder="Digite sua senha"
-                    />
-
-                    <View style={styles.opcoes}>
-                        <Text style={styles.opcoes_texto}>Realizar Cadastro</Text>
-                        <Text style={styles.opcoes_texto}>Esqueceu a senha?</Text>
-                    </View>
-
-                    <TouchableOpacity 
-                        style={[styles.button, { backgroundColor: '#34353B', marginTop: 30 }]} 
-                        onPress={() => setCurrentScreen('HomeCliente')} // Ação para acessar a tela do cliente
-                    >
-                        <Text style={styles.buttonCliente}>ACESSO CLIENTE</Text>
-                    </TouchableOpacity>
-
-                    <TouchableOpacity 
-                        style={[styles.button, { backgroundColor: '#C1C5D2' }]} 
-                        onPress={() => { /* Ação para o botão ADM, se necessário */ }}
-                    >
-                        <Text style={styles.buttonADM}>ADMINISTRADOR</Text>
-                    </TouchableOpacity>
                 </View>
-            ): (
-                <HomeCliente onBack={() => setCurrentScreen('App')} />
-            )}
+
+                <Image
+                    source={ require('../../../imgs/LogoTecHouse.png') }
+                    style={{width: 120, height: 120, top: -100}}
+                />
+
+                <Text style={{ fontSize: 30, color: '#000000', marginBottom: 30 }}>TecHome</Text>
+                <TextInput 
+                    style={styles.input} 
+                    placeholder="Digite seu e-mail:"
+                />
+                
+                <TextInput
+                    style={styles.input}
+                    placeholder="Digite sua senha:"
+                    secureTextEntry
+                />
+
+                <View style={styles.opcoes}>
+                    <Text style={styles.opcoes_texto}>Realizar Cadastro</Text>
+                    <Text style={styles.opcoes_texto}>Esqueceu a senha?</Text>
+                </View>
+
+                <TouchableOpacity 
+                    style={[styles.button, { backgroundColor: '#34353B', marginTop: 30 }]} 
+                    onPress={() => setCurrentScreen('HomeCliente')} // Ação para acessar a tela do cliente
+                >
+                    <Text style={styles.buttonCliente}>ACESSO CLIENTE</Text>
+                </TouchableOpacity>
+
+                <TouchableOpacity 
+                    style={[styles.button, { backgroundColor: '#C1C5D2' }]} 
+                    onPress={() => { /* Ação para o botão ADM, se necessário */ }}
+                >
+                    <Text style={styles.buttonADM}>ADMINISTRADOR</Text>
+                </TouchableOpacity>
+                </View>
         </SafeAreaView>
     );
 };
