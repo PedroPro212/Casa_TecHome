@@ -2,9 +2,22 @@ import React, { useState } from 'react';
 import { SafeAreaView, ScrollView, Text, TextInput, TouchableOpacity, StyleSheet, View, Image } from 'react-native';
 import HomeCliente from '../../home/screens/HomeCliente';
 //import TelaADM from './TelaADM';
+import { NavigationContainer } from '@react-navigation/native';
 
-const Login = () => {
-    const [currentScreen, setCurrentScreen] = useState('App');
+//import { StackNavigationProp } from '@react-navigation/native-stack';
+
+// type ProfileScreenNavigationProp = StackNavigationProp<
+//   RootStackParamList,
+//   'Home'
+// >;
+
+// type Props = {
+//   navigation: ProfileScreenNavigationProp;
+// };
+
+
+const Login = ({ navigation }: {navigation: any}) => {
+    //const [currentScreen, setCurrentScreen] = useState('App');
 
     return (
         <SafeAreaView style={styles.container}>
@@ -39,7 +52,7 @@ const Login = () => {
 
                 <TouchableOpacity 
                     style={[styles.button, { backgroundColor: '#34353B', marginTop: 30 }]} 
-                    onPress={() => setCurrentScreen('HomeCliente')} // Ação para acessar a tela do cliente
+                    onPress={() => navigation.navigate('Home')} // Ação para acessar a tela do cliente
                 >
                     <Text style={styles.buttonCliente}>ACESSO CLIENTE</Text>
                 </TouchableOpacity>
@@ -50,7 +63,7 @@ const Login = () => {
                 >
                     <Text style={styles.buttonADM}>ADMINISTRADOR</Text>
                 </TouchableOpacity>
-                </View>
+            </View>
         </SafeAreaView>
     );
 };
