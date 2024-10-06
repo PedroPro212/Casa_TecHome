@@ -6,7 +6,7 @@ const AguaDisponivel = () => {
         <SafeAreaView style={styles.container}>
             <ScrollView>
                 <View style={styles.header}>
-                    <View style={{width:100, height:100, backgroundColor: '#FFF', borderRadius: 50}}><Image style={styles.img} source={require('./imgs/caixa.png')}/></View>
+                    <View style={{width:100, height:100, backgroundColor: '#FFF', borderRadius: 50}}><Image style={styles.img} source={require('../../../imgs/caixa.png')}/></View>
                     <Text style={styles.titulo}>Água Disponível</Text>
                 </View>
 

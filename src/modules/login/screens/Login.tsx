@@ -1,19 +1,5 @@
 import React, { useState } from 'react';
 import { SafeAreaView, ScrollView, Text, TextInput, TouchableOpacity, StyleSheet, View, Image } from 'react-native';
-import HomeCliente from '../../home/screens/HomeCliente';
-//import TelaADM from './TelaADM';
-import { NavigationContainer } from '@react-navigation/native';
-
-//import { StackNavigationProp } from '@react-navigation/native-stack';
-
-// type ProfileScreenNavigationProp = StackNavigationProp<
-//   RootStackParamList,
-//   'Home'
-// >;
-
-// type Props = {
-//   navigation: ProfileScreenNavigationProp;
-// };
 
 
 const Login = ({ navigation }: {navigation: any}) => {
@@ -59,7 +45,7 @@ const Login = ({ navigation }: {navigation: any}) => {
 
                 <TouchableOpacity 
                     style={[styles.button, { backgroundColor: '#C1C5D2' }]} 
-                    onPress={() => { /* Ação para o botão ADM, se necessário */ }}
+                    onPress={() => navigation.navigate('TelaADM')}
                 >
                     <Text style={styles.buttonADM}>ADMINISTRADOR</Text>
                 </TouchableOpacity>

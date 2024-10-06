@@ -1,8 +1,7 @@
 import { SafeAreaView, Text, TextInput, TouchableOpacity, StyleSheet, View, Image } from 'react-native';
-import AguaDisponivel from '../../../AguaDisponivel';
 import React, { useState } from 'react';
 
-const HomeCliente = () => {
+const HomeCliente = ({ navigation }: {navigation:any}) => {
 
     const [currentScreen, setCurrentScreen] = useState('App');
 
@@ -16,7 +15,7 @@ const HomeCliente = () => {
                         <Image style={{width: 70, height: 70, marginTop: 7}} source={require('../../../imgs/relogio.png')} />
                         <Text style={[styles.opcoes_text, {bottom: -35}]}>Consumo de Água</Text>
                     </View>
-                    <TouchableOpacity style={styles.opcoes} onPress={() => setCurrentScreen('AguaDisponivel')}>
+                    <TouchableOpacity style={styles.opcoes} onPress={() => navigation.navigate('AguaDisponivel')}>
                         <Image style={{width: 80, height: 60, marginTop: 13}} source={require('../../../imgs/caixa.png')} />
                         <Text style={[styles.opcoes_text, {bottom: -38}]}>Água Disponível</Text>
                     </TouchableOpacity>

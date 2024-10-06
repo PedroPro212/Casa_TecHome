@@ -8,43 +8,43 @@ const TelaADM = () => {
 
             <View style={styles.blocos}>
                 <View style={styles.opcoes}>
-                    <Image style={{width: 70, height: 70, marginTop: 7}} source={require('./imgs/relogio.png')} />
+                    <Image style={{width: 70, height: 70, marginTop: 7}} source={require('../../../imgs/relogio.png')} />
                     <Text style={[styles.opcoes_text, {bottom: -35}]}>Consumo de Água</Text>
                 </View>
                 <View style={styles.opcoes}>
-                    <Image style={{width: 80, height: 60, marginTop: 13}} source={require('./imgs/caixa.png')} />
+                    <Image style={{width: 80, height: 60, marginTop: 13}} source={require('../../../imgs/caixa.png')} />
                     <Text style={[styles.opcoes_text, {bottom: -38}]}>Água Disponível</Text>
                 </View>
                 <View style={styles.opcoes}>
-                    <Image style={{width: 80, height: 60, marginTop: 23}} source={require('./imgs/piscina.png')} />
+                    <Image style={{width: 80, height: 60, marginTop: 23}} source={require('../../../imgs/piscina.png')} />
                     <Text style={[styles.opcoes_text, {bottom: -39}]}>Alcalinidade da Piscina</Text>
                 </View>
             </View>
             <View style={styles.blocos}>
                 <View style={styles.opcoes}>
-                    <Image style={{width: 90, height: 90, marginTop: 30}} source={require('./imgs/irrigacao.png')} />
+                    <Image style={{width: 90, height: 90, marginTop: 30}} source={require('../../../imgs/irrigacao.png')} />
                     <Text style={[styles.opcoes_text, {bottom: -15}]}>Sistema de Irrigação</Text>
                 </View>
                 <View style={styles.opcoes}>
-                    <Image style={{width: 100, height: 100, marginTop: 45}} source={require('./imgs/lampadas.png')} />
+                    <Image style={{width: 100, height: 100, marginTop: 45}} source={require('../../../imgs/lampadas.png')} />
                     <Text style={[styles.opcoes_text, {bottom: -3}]}>Sistema de Iluminação</Text>
                 </View>
                 <View style={styles.opcoes}>
-                    <Image style={{width: 70, height: 70, marginTop: 22}} source={require('./imgs/caixa2.png')} />
+                    <Image style={{width: 70, height: 70, marginTop: 22}} source={require('../../../imgs/caixa2.png')} />
                     <Text style={[styles.opcoes_text, {bottom: -26}]}>Captação de Água</Text>
                 </View>
             </View>
             <View style={styles.blocos}>
                 <View style={styles.opcoes}>
-                    <Image style={{width: 80, height: 80, marginTop: 13}} source={require('./imgs/placasolar.png')} />
+                    <Image style={{width: 80, height: 80, marginTop: 13}} source={require('../../../imgs/placasolar.png')} />
                     <Text style={[styles.opcoes_text, {bottom: -30}]}>Geração de Energia Solar</Text>
                 </View>
                 <View style={styles.opcoes}>
-                    <Image style={{width: 80, height: 80, marginTop: 29}} source={require('./imgs/consumo.png')} />
+                    <Image style={{width: 80, height: 80, marginTop: 29}} source={require('../../../imgs/consumo.png')} />
                     <Text style={[styles.opcoes_text, {bottom: -25}]}>Consumo de Energia Total</Text>
                 </View>
                 <View style={styles.opcoes}>
-                    <Image style={{width: 80, height: 60, marginTop: 23}} source={require('./imgs/piscina.png')} />
+                    <Image style={{width: 80, height: 60, marginTop: 23}} source={require('../../../imgs/piscina.png')} />
                     <Text style={[styles.opcoes_text, {bottom: -40}]}>Volume de Água da Piscina</Text>
                 </View>
             </View>
